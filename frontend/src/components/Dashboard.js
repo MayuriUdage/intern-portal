@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+import "../styles/Dashboard.css";
 const Dashboard = () => {
   const [data, setData] = useState(null);
 

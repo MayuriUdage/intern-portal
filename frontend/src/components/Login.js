@@ -1,3 +1,5 @@
+import "../styles/Login.css";
+
 const Login = ({ onLogin }) => (
   <div className="login">
     <h2>Intern Portal Login</h2>

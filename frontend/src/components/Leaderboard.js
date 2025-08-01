@@ -1,3 +1,4 @@
+import "../styles/Leaderboard.css";
 const Leaderboard = ({ data }) => (
   <div>
     <h3>Leaderboard</h3>
