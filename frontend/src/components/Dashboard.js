@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Dashboard = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get("https://your-backend-url/api/intern-data")
+    axios.get("https://intern-portal-p3lt.onrender.com/api/intern-data")
       .then((res) => setData(res.data))
       .catch(console.error);
   }, []);

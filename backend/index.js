@@ -7,14 +7,14 @@ app.use(cors());
 
 app.get("/api/intern-data", (req, res) => {
   res.json({
-    name: "Jane Doe",
-    referralCode: "janedoe2025",
+    name: "Mayuri Udage",
+    referralCode: "mayuriudage2025",
     donations: 1500,
     rewards: ["Bronze Badge", "Free T-shirt"],
     leaderboard: [
-      { name: "Alice", donations: 2000 },
-      { name: "Jane Doe", donations: 1500 },
-      { name: "Bob", donations: 1200 },
+      { name: "Monika", donations: 2000 },
+      { name: "Mayuri", donations: 1500 },
+      { name: "Nikita", donations: 1200 },
     ],
   });
 });
