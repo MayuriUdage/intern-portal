@@ -1,9 +1,14 @@
+// src/components/Login.js
 import "../styles/Login.css";
 
 const Login = ({ onLogin }) => (
-  <div className="login">
-    <h2>Intern Portal Login</h2>
-    <button onClick={onLogin}>Continue to Dashboard</button>
+  <div className="login-container">
+    <div className="login-box">
+      <h2>Welcome Intern 👋</h2>
+      <p>Click below to access your dashboard</p>
+      <button onClick={onLogin}>Go to Dashboard</button>
+    </div>
   </div>
 );
+
 export default Login;

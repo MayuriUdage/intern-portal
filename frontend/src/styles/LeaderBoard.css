@@ -1,19 +1,30 @@
+/* src/styles/Leaderboard.css */
 .leaderboard {
-  margin-top: 3rem;
-  padding: 1rem;
-  background-color: #fff;
+  background: #ffffff;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'Poppins', sans-serif;
 }
 
 .leaderboard h3 {
+  color: #1c2833;
   margin-bottom: 1rem;
 }
 
 .leaderboard ol {
-  padding-left: 1.5rem;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .leaderboard li {
-  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.rank {
+  margin-right: 0.5rem;
 }

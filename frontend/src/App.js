@@ -1,13 +1,23 @@
+// src/App.js
 import { useState } from "react";
-import Login from "./components/Login";
+import "./App.css";
 import Dashboard from "./components/Dashboard";
+import Leaderboard from "./components/Leaderboard";
+import Login from "./components/Login";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
 
   return (
-    <div className="App">
-      {!loggedIn ? <Login onLogin={() => setLoggedIn(true)} /> : <Dashboard />}
+    <div className="app">
+      {!loggedIn ? (
+        <Login onLogin={() => setLoggedIn(true)} />
+      ) : (
+        <>
+          <Dashboard />
+          <Leaderboard />
+        </>
+      )}
     </div>
   );
 }

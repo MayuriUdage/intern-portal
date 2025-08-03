@@ -1,33 +1,44 @@
+/* src/styles/Dashboard.css */
 .dashboard {
-  background: #fff;
-  border-radius: 12px;
   padding: 2rem;
-  margin: 2rem auto;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
 }
 
-.dashboard h2 {
+h2 {
+  color: #1c2833;
   margin-bottom: 1rem;
 }
 
-.info-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-.label {
-  font-weight: bold;
-  color: #555;
+.info-box {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
 }
 
 .rewards {
-  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
 }
 
 .reward-card {
-  background-color: #f0f8ff;
+  background-color: #f0f4f8;
   padding: 1rem;
-  margin: 0.5rem 0;
-  border-radius: 8px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.reward-title {
+  margin-bottom: 1rem;
+  color: #2e86c1;
+}
+
+.loading {
+  padding: 2rem;
+  text-align: center;
 }
